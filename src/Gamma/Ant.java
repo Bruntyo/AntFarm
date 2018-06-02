@@ -104,10 +104,6 @@ class Action implements Runnable {
         //System.out.println("Ant number " + ant.id + " started working");
         if(thread == null){
             thread = new Thread(this,"thread #" + ant.id);
-            try {
-                Thread.sleep(1000);
-            }
-            catch(Exception e){}
             thread.start();
         }
     }
